@@ -9,7 +9,7 @@ from discord.ext.commands import Bot
 import asyncio
 
 PREFIX = '/'  # คำนำหน้า
-TOKEN = ''  # โทเค่นบอท
+TOKEN = 'OTUzNTg2NjgyMDQzNzIzODM2.G2RwZw.CFpnx4sWQ8NaX_BkxuxrKusjXNM1tdt_yI1SNw'  # โทเค่นบอท
 CHANNEL = ''  # ช่องที่ใช้งาน
 ACTIVITY = ''  # สถานะบอท
 AMOUNTA = 1000  # จำนวนยิง
