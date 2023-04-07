@@ -6,13 +6,12 @@ from discord.ext import commands
 from re import search
 import threading
 
-token = "OTUzNTg2NjgyMDQzNzIzODM2.Gsx9ym.rGjplGBCbjZl9JlcQCNbSm0_L_fZXHiVYiStm8"
+token = ""
 
+intents = discord.Intents.default()
+intents.members = True  # enable the privileged members intent
 
-
-prefix = "SP."
-
-bot = commands.Bot(command_prefix=prefix,help_command=None)
+bot = commands.Bot(command_prefix='*',help_command=None,intents=intents)
 threading = ThreadPoolExecutor(max_workers=int(100000000))
 useragent = "Mozilla/5.0 (Linux; Android 11; V2043) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
 def cang01(phone):
@@ -209,9 +208,9 @@ async def sms(ctx, phone, amount:int):
     
     if (amount < 151):
     	
-      embes = discord.Embed(title="SPAMSMS", description="SPECTOR PRO",color=0xff4612)
+      embes = discord.Embed(title="SPAMSMS", description="name",color=0xff4612)
       embes.add_field(name="กำลังยิงไปที่เบอร์",value=phone)
-      ima = "https://phoneky.co.uk/thumbs/screensavers/down/technology/smsisloadi_aleaqts4.gif"
+      ima = "https://hentaigifz.com/content/2021/03/hentai_001-2.gif"
       embes.set_image(url=ima)
     
       await ctx.channel.send(embed=embes)
@@ -221,26 +220,11 @@ async def sms(ctx, phone, amount:int):
       BBot(phone,amount)
     else:
     	await ctx.channel.send("กูบอกว่ายิงไม่เกิน150ไง ไอสัสพวกเหี้ย กูฆ่ามืงแน่")
-    
 
-
-		
-		
-		
-		
-		
-
-
-	
-	
-    
-    
-    
-    
 @bot.command()
 async def help(ctx):
-	emBed = discord.Embed(title="SPECTOR PRO",description="วิธิใช้",color=0xff4612)
-	emBed.add_field(name="SP PRO",value="SP.sms [เบอร์] [จำนวน]")
+	emBed = discord.Embed(title="name",description="วิธิใช้",color=0xff4612)
+	emBed.add_field(name="name",value="SP.sms [เบอร์] [จำนวน]")
 	
 	
 	await ctx.channel.send(embed=emBed)
